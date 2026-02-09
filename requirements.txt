@@ -1,0 +1,4 @@
+markdown
+reportlab
+PyQt6
+pyinstaller
