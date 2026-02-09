@@ -57,6 +57,14 @@ class MarkdownToPDFApp(QMainWindow):
         self.setWindowTitle("Markdown to PDF Converter (Drag & Drop)")
         self.setGeometry(100, 100, 600, 400)
         self.setAcceptDrops(True)
+        
+        # Set Window Icon
+        try:
+            from PyQt6.QtGui import QIcon
+            icon_path = converter.resource_path("icon.ico")
+            self.setWindowIcon(QIcon(icon_path))
+        except Exception as e:
+            print(f"Failed to load icon: {e}")
 
         self.initUI()
 

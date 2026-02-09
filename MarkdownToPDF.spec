@@ -5,7 +5,7 @@ a = Analysis(
     ['gui_converter.py'],
     pathex=[],
     binaries=[],
-    datas=[('NanumGothic.ttf', '.')],
+    datas=[('NanumGothic.ttf', '.'), ('icon.ico', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,4 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['icon.ico'],
 )
